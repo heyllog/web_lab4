@@ -52,7 +52,7 @@ section {
     margin-left: auto;
     width: 63vw;
     padding: 20px;
-    height: 100vh;
+    height: 90vh;
 }
 
 p {
@@ -97,13 +97,44 @@ button:hover {
 }
 
 button:active {
-    color: white;
-    background-color: #F44336;
-    border: solid white;
+    color: #1C242D;
+    background-color: white;
+    border: solid #1C242D;
 }
 
 .names {
     font-family: "Montserrat";
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: center;
+}
+
+.ability {
+    margin-left: 20px;
+}
+
+.pokemon_image {
+    width: 288px;
+    height: 288px;
+}
+
+.pokemon_image:hover {
+    transform: scale(1.4, 1.4);
+}
+
+.polaroid {
+    width: 288px;
+    height: 100%;
+    margin-top: 15px;
+    margin-right: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polaroid p {
+    text-align: center;
+    background-color: #1C242D;
+}
+
+.pokemon_page {
+    display: flex;
 }
