@@ -8,10 +8,23 @@ function fillWithUserData() {
     sect.innerHTML = getCV();
 }
 
-function fillWithPokemon() {
-    getPokemon(pokemon).then(info => sect.innerHTML = info);
+function fillWithError() {
+    sect.innerHTML = `<p>Please, enter pokemon name. </p>`;
+}
+
+function fillWithPokemon(name) {
+    if (name == '') {
+        fillWithError()
+    }
+    getPokemon(name).then(info => sect.innerHTML = info);
 }
 
 document.getElementById('home').onclick = fillWithUserData;
-document.getElementById('pokemon').onclick = fillWithPokemon;
-fillWithPokemon();
+document.getElementById('pokemon').onclick = () => {
+    fillWithPokemon(pokemon)
+};
+document.getElementById('button').onclick = () => {
+    fillWithPokemon(document.getElementById('input').value)
+};
+
+fillWithUserData();

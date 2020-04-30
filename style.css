@@ -21,11 +21,10 @@ header {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-
 }
 
 header img {
-    padding-left: 20px;
+    margin-left: 20px;
     margin-right: auto;
     width: 80px;
     height: 80px;
@@ -40,7 +39,7 @@ header a {
     font-family: 'Open Sans', sans-serif;
     align-self: center;
     color: white;
-    margin: 15px 35px 15px 15px;
+    margin: 15px 30px 15px 10px;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
@@ -64,4 +63,40 @@ section {
 
 p {
     padding: 10px;
+}
+
+input {
+    align-self: center;
+    width: 160px;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+button {
+    align-self: center;
+    width: 48px;
+    height: 48px;
+    color: white;
+    background-color: #F44336;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: solid white;
+    outline: none;
+    transition: .5s ease;
+}
+
+button:hover {
+    color: #F44336;
+    background-color: white;
+    border: solid #F44336;
+}
+
+button:active {
+    color: yellow;
+    background-color: #F44336;
+    border: solid yellow;
 }

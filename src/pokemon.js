@@ -28,9 +28,6 @@ export default async function getPokemon(pokemonName) {
         pokeInfo += `<span>${abilityName}: ${await abilityPromise}<br></span>`//.replace("${abilityName}", abilityName)
     }
 
-    console.log(pokeInfo);
     pokeInfo = pokeInfo.replace(/span/g, "p");
-    console.log(pokeInfo);
-
     return pokeInfo;
 }
