@@ -16,8 +16,10 @@ export default async function getPokemon(pokemonName) {
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
 
     if (!response.ok) {
-        console.log('ERROR: Request returned error');
-        return null;
+        return `<div class="pokemon_page"><div class="polaroid"><img class="sad_pokemon" alt="" src="https://i.pinimg.com/originals/dc/28/f7/dc28f762c803b7aef0d64875712acca9.png">
+                    <p>Sad Pikachu</p></div>
+                    <p>404: Not found.<br>
+                    There's no such pokémon(</p></div>`;
     }
 
     const POKEMON_DATA = await response.json();

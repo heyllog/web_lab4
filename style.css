@@ -81,25 +81,24 @@ input:focus {
 
 button {
     align-self: center;
-    width: 42px;
-    height: 42px;
+    width: 30px;
+    height: 30px;
     color: white;
-    background-color: #1C242D;
-    margin-right: 10px;
+    background-color: #344151;
+    margin-right: 25px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: none;
     outline: none;
     transition: .5s ease;
 }
 
 button:hover {
-    color: #F44336;
+    color: #FBD54A;
 }
 
 button:active {
     color: #1C242D;
     background-color: white;
-    border: solid #1C242D;
 }
 
 .names {
@@ -115,6 +114,7 @@ button:active {
 .pokemon_image {
     width: 288px;
     height: 288px;
+    transition: .5s ease;
 }
 
 .pokemon_image:hover {
@@ -137,4 +137,9 @@ button:active {
 
 .pokemon_page {
     display: flex;
+}
+
+.sad_pokemon {
+    width: 288px;
+    height: 288px;
 }
