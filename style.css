@@ -1,34 +1,29 @@
 * {
     margin: 0;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #1C242D;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     margin-right: auto;
     margin-left: auto;
-    width: 66vw;
-    background-color: #F44336;
     padding: 2px 10px 2px 10px;
     display: flex;
-    border-bottom: solid black;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-bottom: solid #353d45;
 }
 
 header img {
     margin-left: 20px;
     margin-right: auto;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     transition: .5s ease ;
+    align-self: center;
 }
 
 header img:hover {
@@ -58,45 +53,59 @@ section {
     width: 63vw;
     padding: 20px;
     height: 100vh;
-    background-color: white;
 }
 
 p {
     padding: 10px;
+    font-size: 24px;
 }
 
 input {
     align-self: center;
-    width: 160px;
+    width: 300px;
     height: 30px;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
+    font-size: 20px;
+    color: white;
+    background-color: #344151;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     outline: none;
+    transition: .5s ease;
+    margin-right: -50px;
+}
+
+input:focus {
+    width: 500px;
+    /*border: 1px solid white;*/
 }
 
 button {
     align-self: center;
-    width: 48px;
-    height: 48px;
+    width: 42px;
+    height: 42px;
     color: white;
-    background-color: #F44336;
-    margin-right: 20px;
+    background-color: #1C242D;
+    margin-right: 10px;
     border-radius: 50%;
-    border: solid white;
+    border: 2px solid white;
     outline: none;
     transition: .5s ease;
 }
 
 button:hover {
     color: #F44336;
-    background-color: white;
-    border: solid #F44336;
 }
 
 button:active {
-    color: yellow;
+    color: white;
     background-color: #F44336;
-    border: solid yellow;
+    border: solid white;
+}
+
+.names {
+    font-family: "Montserrat";
+    margin-top: 50px;
+    text-align: center;
 }

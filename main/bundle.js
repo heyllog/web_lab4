@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getCV; });\nfunction getCV() {\n    return `<p>Vakhtang Karchava M3310<br></p>\n            <p>Grigory Sumlinsky M3310<br></p>`;\n}\n\n//# sourceURL=webpack:///./src/cv.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return getCV; });\nfunction getCV() {\n    return `<p>Hello, on this website you can find information about every pokemon. Just use our search)</p>\n            <p class=\"names\">© 2020 VKGS Ltd. <br>\n            Vakhtang Karchava & Grigory Sumlinsky<br>\n             M3310</p>`;\n}\n\n//# sourceURL=webpack:///./src/cv.js?");
 
 /***/ }),
 

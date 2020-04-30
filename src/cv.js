@@ -1,4 +1,6 @@
 export default function getCV() {
-    return `<p>Vakhtang Karchava M3310<br></p>
-            <p>Grigory Sumlinsky M3310<br></p>`;
+    return `<p>Hello, on this website you can find information about every pokemon. Just use our search)</p>
+            <p class="names">© 2020 VKGS Ltd. <br>
+            Vakhtang Karchava & Grigory Sumlinsky<br>
+             M3310</p>`;
 }
