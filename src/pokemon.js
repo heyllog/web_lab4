@@ -16,7 +16,7 @@ export default async function getPokemon(pokemonName) {
         return null;
     }
 
-    let pokeInfo = `<span>Name: ${pokemonName}<br></span>`;//.replace("${pokemonName}", pokemonName);
+    let pokeInfo = `<span>Name: ${pokemonName}<br></span>`;
 
     const POKEMON_DATA = await response.json();
 
@@ -25,7 +25,7 @@ export default async function getPokemon(pokemonName) {
         let abilityUrl = ability.url;
         let abilityPromise = getAbilityInfo(abilityUrl);
         let abilityName = ability.name;
-        pokeInfo += `<span>${abilityName}: ${await abilityPromise}<br></span>`//.replace("${abilityName}", abilityName)
+        pokeInfo += `<span>${abilityName}: ${await abilityPromise}<br></span>`;
     }
 
     pokeInfo = pokeInfo.replace(/span/g, "p");

@@ -22,7 +22,7 @@ header img {
     margin-right: auto;
     width: 60px;
     height: 60px;
-    transition: .5s ease ;
+    transition: .5s ease;
     align-self: center;
 }
 
@@ -64,7 +64,6 @@ input {
     align-self: center;
     width: 300px;
     height: 30px;
-    /*margin-right: 10px;*/
     font-size: 20px;
     color: white;
     background-color: #344151;
@@ -78,7 +77,6 @@ input {
 
 input:focus {
     width: 500px;
-    /*border: 1px solid white;*/
 }
 
 button {
